@@ -1,0 +1,83 @@
+/* centerization--- */
+.tpad {
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.w70 {
+    width: 70px;
+}
+
+
+
+.zIndexNone {
+    z-index: -1 !important;
+}
+
+
+
+.w100p {
+    width: 100%;
+}
+
+.bg-default {
+    background-color: var(--default-bg-color);
+}
+
+.half-opacity {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.px-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.none {
+    display: none;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.ds-none {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.icon-sm {
+    font-size: .8rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.white {
+    color: white;
+}
+
+.col-df {
+    color: var(--default-color);
+}

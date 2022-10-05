@@ -1,0 +1,300 @@
+@media screen and (max-width:1024px) {
+    html {
+
+        max-width: 100%;
+        overflow-x: scroll !important;
+    }
+
+    /* utils edit */
+    .hide {
+        opacity: 1;
+    }
+
+    .none {
+        display: block;
+    }
+
+    .ds-none {
+        display: block;
+    }
+
+    /* nav  */
+    .nav,
+    .nav.active {
+        box-shadow: var(--default-box-shadow-2);
+        position: fixed;
+        width: 70vw;
+        height: 100vh;
+        background-color: var(--default-bg-color);
+        transition: .5s ease all !important;
+        overflow-x: hidden;
+        z-index: 100000;
+        top: 0;
+        left: -70vw;
+        display: grid;
+        place-items: center;
+        grid-template-areas:
+            "nav"
+            "nav"
+            "nav"
+            "nav"
+            "nav"
+            "nav"
+            "close";
+    }
+
+    nav li {
+        border-radius: 50px;
+    }
+
+    .clicked * {
+        color: var(--default-bg-color) !important;
+    }
+
+    .nav ul li a span {
+        font-size: 2rem;
+    }
+
+    .nav ul li::after,
+    .nav ul li a::after,
+    .clicked::before,
+    .clicked::after {
+        height: 0 !important;
+        width: 0 !important;
+        display: none !important;
+    }
+
+    .nav ul {
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+        grid-area: nav;
+    }
+
+    .nav ul * {
+        color: white;
+    }
+
+    #closeNav {
+        display: block;
+        padding: 55px 120px 10px 120px;
+        margin-top: 20px;
+        grid-area: close;
+        font-size: 3rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* main  */
+    main,
+    .main {
+        margin-top: 45px;
+        width: 100vw;
+        position: static;
+        background-color: white;
+        transition: .5s ease;
+        height: auto;
+    }
+
+    /* topbar */
+    .rmcollapse,
+    .topbar {
+        left: 0;
+        width: 100%;
+        padding: 2px 10px;
+        gap: 0;
+    }
+
+    #logo2 {
+        display: none;
+    }
+
+    #toggle,
+    .toggle-add {
+        z-index: 1000;
+        width: auto;
+        position: static;
+        transform: none;
+    }
+
+    #searchBox {
+        width: auto;
+        min-width: 200px;
+        margin: 0 15px 0 0;
+        padding: 0;
+    }
+
+    /* cardBox */
+    #cardBox {
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    /* table related */
+    .detailsBox,
+    .detailsBox.details-collapse {
+        left: 0;
+        width: 100%;
+    }
+
+    #detailsHead {
+        transform: translateY(-2px);
+    }
+
+    #monitorOrders tbody td {
+        padding: 5px;
+        text-align: center;
+    }
+
+
+    /* footer  */
+    footer {
+        padding: 10px 0;
+        height: auto;
+        width: 100vw !important;
+        position: static;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 2fr 1fr;
+        gap: 0;
+    }
+
+    .copyright {
+        width: 100%;
+        height: auto;
+        letter-spacing: 1px;
+    }
+
+    .footerIconBox {
+        width: 100%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    html {
+        font-size: .9em;
+    }
+
+    /* nav */
+    .nav ul li a span,
+    .nav.active ul li a span {
+        font-size: 1.3rem !important;
+        font-weight: bold;
+    }
+
+    /* main */
+    /* .topbar */
+    /* cardbox  */
+    #cardBox {
+        gap: 10px;
+        place-content: center;
+        place-items: center;
+        grid-template-columns: 45% 45% !important;
+        grid-template-rows: 150px 150px !important;
+
+    }
+
+    #cardBox .card {
+        align-items: flex-start;
+        padding: 6px;
+        margin: 0;
+        width: 95%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #cardBox .card .textBox {
+        width: 60%;
+    }
+
+    #cardBox .card .iconBox {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* tables related  */
+    .recentOrders tbody,
+    #monitorOrders {
+        min-width: 420px;
+    }
+
+    .recentOrders tbody::-webkit-scrollbar {
+        height: 3px;
+    }
+
+    .recentOrders {
+        overflow-x: scroll !important;
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+
+    #monitorOrders tbody td {
+        padding: 1px;
+        text-align: center;
+    }
+
+    .bi-info-circle-fill {
+        display: none !important;
+    }
+
+    .customerDetails .dbox {
+        width: 100%;
+        gap: 10px;
+        padding: 20px 0;
+        align-items: flex-start;
+        justify-content: space-around;
+        grid-template-columns: unset !important;
+        grid-template-rows: unset !important;
+        grid-template-areas: "first img""address1""address2" !important;
+    }
+
+    .customerDetails .dbox:nth-child(1) {
+        grid-area: first;
+    }
+
+    .customerDetails .dbox:nth-child(2) {
+        grid-area: img;
+    }
+
+    .customerDetails .dbox:nth-child(3) {
+        grid-area: address1;
+    }
+
+    .customerDetails .dbox:nth-child(4) {
+        grid-area: address2;
+    }
+
+    .details-imgBox {
+        width: 100%;
+    }
+
+    .productDetails .dbox {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+    }
+
+    .body-box div {
+        width: 85% !important;
+    }
+
+    /* footer  */
+
+}
