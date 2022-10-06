@@ -2,7 +2,7 @@
     html {
 
         max-width: 100%;
-        overflow-x: scroll !important;
+        overflow-x: hidden;
     }
 
     /* utils edit */
@@ -240,7 +240,6 @@
     }
 
     .recentOrders {
-        overflow-x: scroll !important;
         padding-top: 10px;
         padding-bottom: 40px;
     }
@@ -295,6 +294,8 @@
         width: 85% !important;
     }
 
+    #monitorOrders td span {
+    padding: 0 1px;}
     /* footer  */
 
 }
