@@ -300,6 +300,9 @@
     .filteringBox {
         right: -33px;
     }
+    #search-btn {
+        visibility: hidden;
+    }
     /* footer  */
 
 }
