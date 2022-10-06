@@ -123,6 +123,7 @@ jQuery(document).ready(function ($) {
 
     const stObj = {
         "Paid": "was purchased",
+        "Cash on delivery paid":"was bought and paid product cost by cash",
         "Cash on delivery": "was bought",
         "Returned": "got returned his money for this product. Because he returned the product before return the product instantly",
         "Returning": "will get his money soon (in progress now) for this product. Because he returned the product instantly",
