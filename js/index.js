@@ -123,10 +123,7 @@ jQuery(document).ready(function ($) {
 
     const stObj = {
         "Paid": "was purchased",
-<<<<<<< HEAD
         "Returned money": "got returned his/her money, product is ",
-=======
->>>>>>> 14a347346ed6836924babe34db8f34c046d44aff
         "Cash on delivery paid": "was bought and paid product cost by cash",
         "Cash on delivery": "was bought",
         "Returned": "got returned his money for this product. Because he returned the product before return expiry date",
