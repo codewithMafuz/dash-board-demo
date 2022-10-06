@@ -123,8 +123,10 @@ jQuery(document).ready(function ($) {
 
     const stObj = {
         "Paid": "was purchased",
+        "Returned money":"got returned his/her money, product is ",
+        "Cash on delivery paid":"was bought and paid product cost by cash",
         "Cash on delivery": "was bought",
-        "Returned": "got returned his money for this product. Because he returned the product before return the product instantly",
+        "Returned": "got returned his money for this product. Because he returned the product before return expiry date",
         "Returning": "will get his money soon (in progress now) for this product. Because he returned the product instantly",
         "Preparing": " is preparing now to deliver (packaging and others)",
         "On the way": " is on the way of customer's delivery place",
@@ -557,7 +559,6 @@ jQuery(document).ready(function ($) {
     })
 
     function runFilter() {
-
         let x
 
         mn = $("#minPrice").val().length > 0 ? $("#minPrice").val() : 0
@@ -565,8 +566,8 @@ jQuery(document).ready(function ($) {
 
         $(this).addClass('half-opacity')
         tbodyTr()
-        $("input[type='monitorbox']").each(function () {
-            if ($(this).is(':monitored')) {
+        $("input[type='checkbox']").each(function () {
+            if ($(this).is(':checked')) {
                 let e = $('.' + ($(this).val())).parent()
                 $(e).each(function () {
                     x = parseFloat($(this).prev().prev().text().replace('$', ''))
@@ -580,7 +581,7 @@ jQuery(document).ready(function ($) {
     $('#apply-filtering').click(function () {
         runFilter()
     })
-    $("input[type='monitorbox']").click(function () {
+    $("input[type='checkbox']").click(function () {
         $("#reset-filtering").removeClass("half-opacity")
         $("#apply-filtering").removeClass("half-opacity")
     })
