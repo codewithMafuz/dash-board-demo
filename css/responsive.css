@@ -295,7 +295,11 @@
     }
 
     #monitorOrders td span {
-    padding: 0 1px;}
+        padding: 0 1px;
+    }
+    .filteringBox {
+        right: 0;
+    }
     /* footer  */
 
 }
