@@ -90,8 +90,8 @@ jQuery(document).ready(function ($) {
             resetSearchResult()
         }
     })
-    srBtn.addEventListener("click", () => {
-        searchIt(srch.value)
+    $("#search-input").on("click blur",function(){
+        searchIt($(this).val())
     })
 
     // nav related 
