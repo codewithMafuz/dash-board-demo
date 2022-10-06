@@ -123,8 +123,11 @@ jQuery(document).ready(function ($) {
 
     const stObj = {
         "Paid": "was purchased",
-        "Returned money":"got returned his/her money, product is ",
-        "Cash on delivery paid":"was bought and paid product cost by cash",
+<<<<<<< HEAD
+        "Returned money": "got returned his/her money, product is ",
+=======
+>>>>>>> 14a347346ed6836924babe34db8f34c046d44aff
+        "Cash on delivery paid": "was bought and paid product cost by cash",
         "Cash on delivery": "was bought",
         "Returned": "got returned his money for this product. Because he returned the product before return expiry date",
         "Returning": "will get his money soon (in progress now) for this product. Because he returned the product instantly",
@@ -217,7 +220,7 @@ jQuery(document).ready(function ($) {
         <p><b>Customer phone :</b> Private</p>
     </div>
     <div class="details-imgBox">
-        <img src="../images/customer.png">
+        <img src="images/customer.png">
     </div>
 
 
@@ -282,7 +285,7 @@ jQuery(document).ready(function ($) {
         </div>
     </div>
     <div class="details-imgBox">
-        <img src="../images/shirt.png">
+        <img src="images/shirt.png">
     </div>
 </div>
 <p>Product name : ${prd.innerText}</p>
