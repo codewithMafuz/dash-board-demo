@@ -193,6 +193,9 @@
         font-size: 1.3rem !important;
         font-weight: bold;
     }
+    #closeNav {
+        padding: 55px 120px 200px 120px;
+    }
 
     /* main */
     /* .topbar */
@@ -229,7 +232,27 @@
         text-align: center;
     }
 
+    #cardBox {
+        margin: 20px 0;
+        padding-top: 20px;
+    }
+    .textBox {
+        align-items: unset !important;
+        padding-left: 10px;
+    }
     /* tables related  */
+    .card-headingBox h2 {
+        font-size: 1rem;
+        width: 100px;
+    }
+
+    #filter-orders {
+        padding-left: 90px;
+    }
+    .filteringBox {
+        right : -15% !important;
+    } 
+
     .recentOrders tbody,
     #monitorOrders {
         min-width: 420px;
@@ -240,6 +263,7 @@
     }
 
     .recentOrders {
+        width: 96vw !important;
         padding-top: 10px;
         padding-bottom: 40px;
     }
@@ -252,7 +276,14 @@
     .bi-info-circle-fill {
         display: none !important;
     }
-
+    /* details */
+    #detailsHead p{
+        font-size: 1rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    }
     .customerDetails .dbox {
         width: 100%;
         gap: 10px;
@@ -261,7 +292,7 @@
         justify-content: space-around;
         grid-template-columns: unset !important;
         grid-template-rows: unset !important;
-        grid-template-areas: "first img""address1""address2" !important;
+        grid-template-areas: "first img" "address1" "address2" !important;
     }
 
     .customerDetails .dbox:nth-child(1) {
@@ -297,12 +328,21 @@
     #monitorOrders td span {
         padding: 0 1px;
     }
+
     .filteringBox {
-        right: -33px;
+        right: -20px;
     }
+
     #search-btn {
         visibility: hidden;
     }
+
     /* footer  */
 
+}
+
+@media screen and (max-width:395px) {
+    .filteringBox {
+        right : -28% !important;
+    } 
 }

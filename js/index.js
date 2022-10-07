@@ -587,7 +587,8 @@ jQuery(document).ready(function ($) {
     })
 
     resetFilter.addEventListener("click", function () {
-        $("input[type='monitorbox']").prop("monitored", true)
+        $("input[type='checkbox']").prop("checked", true)
+        $("input[type='number']").val(false)
         this.classList.add('half-opacity')
     })
 
